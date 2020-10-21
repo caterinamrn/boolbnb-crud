@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="card-body">
-          <!-- <img src="" alt=""> -->
+          <!-- <img src="/img/{{$apart -> image}}" alt=""> -->
           <h2>Informazioni relative all'appartamento</h2>
           <ul>
 

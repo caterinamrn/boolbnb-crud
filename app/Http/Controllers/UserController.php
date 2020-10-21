@@ -88,6 +88,7 @@ class UserController extends Controller
 
       $data = $request -> all();
       $apart = Apartment::findOrFail($id);
+      $apart->services()->detach();
       $apart -> update($data);
 
       $wifi = $request -> input('wifi');
