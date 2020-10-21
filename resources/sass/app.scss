@@ -1,0 +1,119 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* HEADER */
+header{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url('../img/jumbo.jpg');
+  background-size: cover;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+#logo{
+  width: 140px;
+  height: 50px;
+}
+.inline-block{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
+.none{
+  display: none;
+}
+#user{
+  width: 35px;
+  height: 25px;
+  margin-top: 5px;
+}
+.margin25{
+  margin: 25px;
+}
+.first-block span{
+  margin: 20px;
+  color: white;
+}
+.margin60{
+  margin-top: 60px;
+}
+.white-radius{
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  border-radius: 30px;
+}
+.white-radius-center{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 50vw;
+  height: 60px;
+  background-color: white;
+  border-radius: 30px;
+}
+.white-radius-center div, span, p{
+  margin: 10px;
+}
+.white-radius-center p{
+  color: grey;
+}
+.border-div{
+  border-left: 1px solid grey;
+}
+a{
+  text-decoration: none;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: #FF385C;
+  transform: translate(0, -5px);
+}
+.fa-search{
+  color: white;
+}
+#globe-div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+#log-reg{
+  flex-direction: row;
+}
+#regist{
+  display: flex;
+  align-items: center;
+}
+.dropdown-toggle::after {
+  display:none;
+}
+#my-profile{
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: space-around;
+}
