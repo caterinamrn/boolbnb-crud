@@ -131,15 +131,16 @@ class UserController extends Controller
        ]);
 
         if ($validator->fails()) {
-                return redirect('/create')
-                       ->withErrors($validator)
+                // return redirect('/create')
+                return redirect('edit/'.$id)
+                      ->withErrors($validator)
                        ->withInput();
               }
 
       $data = $request -> all();
       $apart = Apartment::findOrFail($id);
       $services = $apart->services()->detach();
-      // $apart -> update($data);
+
 
       $wifi = $request -> input('wifi');
       if ($wifi) {
