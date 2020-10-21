@@ -4,6 +4,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-md-8">
+      <a  href="{{route('user.index')}}">Elenco appartamenti</a>
       <div class="card">
         <div class="card-header">
           <h1>{{$apart -> description}}</h1>
@@ -13,7 +14,7 @@
           </div>
         </div>
         <div class="card-body">
-          <!-- <img src="/img/{{$apart -> image}}" alt=""> -->
+          <img src="/img/{{$apart -> image}}" alt="img">
           <h2>Informazioni relative all'appartamento</h2>
           <ul>
 
